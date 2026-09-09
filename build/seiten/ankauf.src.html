@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Auto verkaufen in Ronshausen — Ankauf und Inzahlungnahme | RM Automobile</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Fahrzeug verkaufen an RM Automobile in Ronshausen: Ankauf von Privat- und Firmenkunden, Inzahlungnahme beim Neukauf, Kreditablöse bei laufender Finanzierung.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="bilder/m-logo.png">
+</head>
+<body>
+<!--KOPF-->
+
+<section class="hero klein">
+  <img class="bg" src="bilder/ST.jpg" alt="Fahrzeuginnenraum">
+  <div class="wrap">
+    <p class="eyebrow">Ankauf und Inzahlungnahme</p>
+    <h1>Ihr Auto verkaufen, ohne Theater</h1>
+    <p>Wir kaufen Fahrzeuge von Privatpersonen und Firmenkunden an. Sie schicken uns die Eckdaten, wir machen ein marktgerechtes Angebot und wickeln die Formalitäten ab.</p>
+    <div class="tasten">
+      <a class="knopf" href="#anbieten">Fahrzeug anbieten</a>
+      <a class="knopf rand-weiss" href="tel:+491735484398">0173 5484398</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kopfzeile">
+      <p class="eyebrow">So läuft es ab</p>
+      <h2>Drei Schritte bis zum Angebot</h2>
+    </div>
+    <div class="karten">
+      <div class="karte">
+        <div class="nr">01</div>
+        <h3>Eckdaten schicken</h3>
+        <p>Modell, Erstzulassung, Laufleistung, Zustand. Bilder helfen, sind aber kein Muss. Wer lieber redet, ruft an.</p>
+      </div>
+      <div class="karte">
+        <div class="nr">02</div>
+        <h3>Fahrzeug ansehen</h3>
+        <p>Wir schauen uns das Auto in Ronshausen an. Der Kfz-Meister ist im Haus, die Bewertung passiert also nicht am Telefon, sondern am Fahrzeug.</p>
+      </div>
+      <div class="karte">
+        <div class="nr">03</div>
+        <h3>Angebot und Abwicklung</h3>
+        <p>Sie bekommen ein marktgerechtes Angebot. Passt es, übernehmen wir Papiere und Abmeldung. Läuft noch eine Finanzierung, kümmern wir uns um die Kreditablöse.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sand">
+  <div class="wrap zweispalt schmal">
+    <div>
+      <p class="eyebrow">Inzahlungnahme</p>
+      <h2>Altes Auto weg, neues Auto da. Am selben Tag.</h2>
+      <p class="lead">Wenn Sie bei uns ein Fahrzeug kaufen, nehmen wir Ihr bisheriges in Zahlung und verrechnen den Wert direkt mit dem Kaufpreis. Sie müssen es nicht privat inserieren, keine Besichtigungstermine machen und sich nicht um zwei Abwicklungen kümmern.</p>
+      <a class="knopf" href="fahrzeuge.html" style="margin-top:14px">Erst mal Fahrzeuge ansehen</a>
+    </div>
+    <div>
+      <ul class="liste" style="grid-template-columns:1fr">
+        <li>Ankauf von Privat- und Firmenkunden</li>
+        <li>Marktgerechtes Angebot nach Besichtigung</li>
+        <li>Wert wird beim Neukauf verrechnet</li>
+        <li>Kreditablöse bei laufender Finanzierung</li>
+        <li>Papiere und Abmeldung übernehmen wir</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="anbieten">
+  <div class="wrap zweispalt">
+    <div>
+      <p class="eyebrow">Fahrzeug anbieten</p>
+      <h2>Sagen Sie uns, was Sie haben.</h2>
+      <p class="lead">Je genauer die Angaben, desto belastbarer unsere erste Einschätzung. Das endgültige Angebot machen wir nach der Besichtigung.</p>
+      <p class="lead">Lieber direkt sprechen? <a href="tel:+491735484398" style="color:var(--rot);font-weight:600">0173 5484398</a> oder <a href="tel:+4966224208362" style="color:var(--rot);font-weight:600">06622 42083-62</a>.</p>
+    </div>
+    <form class="anfrage" action="kontakt.php" method="post">
+      <div>
+        <label for="a-name">Name</label>
+        <input id="a-name" name="name" required>
+      </div>
+      <div>
+        <label for="a-tel">Telefon</label>
+        <input id="a-tel" name="telefon" type="tel" required>
+      </div>
+      <div class="voll">
+        <label for="a-mail">E-Mail</label>
+        <input id="a-mail" name="email" type="email">
+      </div>
+      <div>
+        <label for="a-marke">Marke und Modell</label>
+        <input id="a-marke" name="modell" required>
+      </div>
+      <div>
+        <label for="a-ez">Erstzulassung</label>
+        <input id="a-ez" name="erstzulassung" placeholder="MM/JJJJ">
+      </div>
+      <div>
+        <label for="a-km">Laufleistung</label>
+        <input id="a-km" name="laufleistung" placeholder="in km">
+      </div>
+      <div>
+        <label for="a-zustand">Zustand</label>
+        <select id="a-zustand" name="zustand">
+          <option>gepflegt, keine Schäden</option>
+          <option>kleine Gebrauchsspuren</option>
+          <option>Reparaturbedarf</option>
+          <option>Unfallfahrzeug</option>
+        </select>
+      </div>
+      <div class="voll">
+        <label for="a-text">Anmerkungen</label>
+        <textarea id="a-text" name="nachricht" placeholder="Ausstattung, Scheckheft, TÜV bis, laufende Finanzierung ..."></textarea>
+      </div>
+      <div class="voll checkzeile">
+        <input type="checkbox" id="a-ds" name="datenschutz" required>
+        <label for="a-ds" style="font-weight:400">Ich habe die <a href="datenschutz.html">Datenschutzhinweise</a> gelesen und bin mit der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage einverstanden.</label>
+      </div>
+      <div class="voll">
+        <button class="knopf" type="submit" style="width:100%;cursor:pointer">Fahrzeug anbieten</button>
+        <p class="pflichtnote">Formularversand muss vom Hoster noch aktiviert werden.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!--FUSS-->
+</body>
+</html>

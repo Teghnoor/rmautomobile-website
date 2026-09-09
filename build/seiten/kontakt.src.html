@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Kontakt und Anfahrt — RM Automobile Ronshausen</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="RM Automobile, Ziegeleistraße 1, 36217 Ronshausen. Telefon 06622 42083-61, Werkstatt Postweg 5. Öffnungszeiten, Anfahrt und Kontaktformular.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="bilder/m-logo.png">
+</head>
+<body>
+<!--KOPF-->
+
+<section class="hero klein">
+  <img class="bg" src="bilder/2.jpg" alt="Ausstellungshalle von RM Automobile">
+  <div class="wrap">
+    <p class="eyebrow">Kontakt</p>
+    <h1>Sprechen wir darüber</h1>
+    <p>Am schnellsten geht es telefonisch. Schriftlich melden wir uns zu den Öffnungszeiten zurück.</p>
+    <div class="tasten">
+      <a class="knopf" href="tel:+4966224208361">06622 42083-61</a>
+      <a class="knopf rand-weiss" href="tel:+491735484398">0173 5484398</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap zweispalt">
+    <div>
+      <p class="eyebrow">Anfrage</p>
+      <h2>Schreiben Sie uns</h2>
+      <p class="lead">Kauf, Verkauf, Werkstatt oder Suchauftrag. Sagen Sie kurz, worum es geht, dann landet die Anfrage direkt beim richtigen Ansprechpartner.</p>
+      <form class="anfrage" action="kontakt.php" method="post" style="margin-top:26px">
+        <div>
+          <label for="k-name">Name</label>
+          <input id="k-name" name="name" required>
+        </div>
+        <div>
+          <label for="k-firma">Firma (optional)</label>
+          <input id="k-firma" name="firma">
+        </div>
+        <div>
+          <label for="k-mail">E-Mail</label>
+          <input id="k-mail" name="email" type="email" required>
+        </div>
+        <div>
+          <label for="k-tel">Telefon</label>
+          <input id="k-tel" name="telefon" type="tel">
+        </div>
+        <div class="voll">
+          <label for="k-thema">Worum geht es?</label>
+          <select id="k-thema" name="thema">
+            <option>Fahrzeug aus dem Bestand</option>
+            <option>Suchauftrag</option>
+            <option>Fahrzeug verkaufen oder in Zahlung geben</option>
+            <option>Werkstatt-Termin</option>
+            <option>HU und AU</option>
+            <option>Etwas anderes</option>
+          </select>
+        </div>
+        <div class="voll">
+          <label for="k-text">Ihre Nachricht</label>
+          <textarea id="k-text" name="nachricht" required></textarea>
+        </div>
+        <div class="voll checkzeile">
+          <input type="checkbox" id="k-ds" name="datenschutz" required>
+          <label for="k-ds" style="font-weight:400">Ich habe die <a href="datenschutz.html">Datenschutzhinweise</a> gelesen und bin mit der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage einverstanden.</label>
+        </div>
+        <div class="voll">
+          <button class="knopf" type="submit" style="width:100%;cursor:pointer">Nachricht senden</button>
+          <p class="pflichtnote">Formularversand muss vom Hoster noch aktiviert werden.</p>
+        </div>
+      </form>
+    </div>
+    <div>
+      <p class="eyebrow">Direkt</p>
+      <h2>Kontaktdaten</h2>
+      <ul class="liste" style="grid-template-columns:1fr;margin-top:18px">
+        <li><strong>RM Automobile</strong><br>Autohandel &amp; Kfz-Meisterbetrieb<br>Ziegeleistraße 1, 36217 Ronshausen</li>
+        <li>Telefon <a href="tel:+4966224208361" style="color:var(--rot);font-weight:600">06622 42083-61</a></li>
+        <li>Mobil <a href="tel:+491735484398" style="color:var(--rot);font-weight:600">0173 5484398</a></li>
+        <li>Verkauf und Einkauf <a href="tel:+4966224208362" style="color:var(--rot);font-weight:600">06622 42083-62</a></li>
+        <li>Werkstatt <a href="tel:+4966224208363" style="color:var(--rot);font-weight:600">06622 42083-63</a></li>
+        <li>Fax 06622 42083-69</li>
+        <li>E-Mail <a href="mailto:info@rmautomobile.de" style="color:var(--rot);font-weight:600">info@rmautomobile.de</a></li>
+        <li>Werkstatt <a href="mailto:werkstatt@rmautomobile.de" style="color:var(--rot);font-weight:600">werkstatt@rmautomobile.de</a></li>
+      </ul>
+
+      <table class="zeiten" style="margin-top:34px">
+        <tr><th colspan="2">An- und Verkauf · Ziegeleistraße 1</th></tr>
+        <tr><td>Montag bis Freitag</td><td>9:00 – 18:00 Uhr</td></tr>
+        <tr><td>Samstag</td><td>9:00 – 14:00 Uhr</td></tr>
+      </table>
+      <table class="zeiten" style="margin-top:26px">
+        <tr><th colspan="2">Werkstatt · Postweg 5</th></tr>
+        <tr><td>Montag bis Freitag</td><td>9:00 – 18:00 Uhr</td></tr>
+        <tr><td>Samstag</td><td>9:00 – 14:00 Uhr</td></tr>
+      </table>
+      <p class="klein" style="margin-top:14px">HU und AU: Dienstag 14:00 Uhr, Donnerstag 8:00 Uhr, nur mit Termin.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sand">
+  <div class="wrap">
+    <div class="kopfzeile">
+      <p class="eyebrow">Anfahrt</p>
+      <h2>So finden Sie uns</h2>
+      <p class="lead">Ronshausen liegt an der A4 zwischen Bad Hersfeld und Bebra. Aus Bebra, Sontra, Rotenburg und Bad Hersfeld sind Sie in wenigen Minuten da.</p>
+    </div>
+    <div class="paar" style="margin-top:0">
+      <div class="karte">
+        <h3>An- und Verkauf</h3>
+        <p>Ziegeleistraße 1<br>36217 Ronshausen</p>
+        <p>Ausstellungshalle und Außenfläche. Parken direkt vor dem Haus.</p>
+        <a class="knopf" href="https://www.google.com/maps/search/?api=1&amp;query=Ziegeleistra%C3%9Fe+1%2C+36217+Ronshausen" target="_blank" rel="noopener">Route planen</a>
+      </div>
+      <div class="karte">
+        <h3>Werkstatt</h3>
+        <p>Postweg 5<br>36217 Ronshausen</p>
+        <p>Annahme für Inspektion, HU und AU, Reifen und Reparatur.</p>
+        <a class="knopf hell" href="https://www.google.com/maps/search/?api=1&amp;query=Postweg+5%2C+36217+Ronshausen" target="_blank" rel="noopener">Route planen</a>
+      </div>
+    </div>
+    <p class="klein" style="margin-top:16px">Die Routenplanung öffnet Google Maps in einem neuen Fenster. Auf unserer Seite selbst ist keine Karte eingebettet, es werden also keine Daten an Dritte übertragen, solange Sie nicht klicken.</p>
+  </section>
+
+<!--FUSS-->
+</body>
+</html>

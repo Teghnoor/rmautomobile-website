@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Fahrzeugbestand — RM Automobile Ronshausen</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Aktueller Fahrzeugbestand von RM Automobile in Ronshausen: gepflegte Gebraucht- und Jahreswagen, auf Wunsch mit Finanzierung und Gebrauchtfahrzeug-Garantie.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="bilder/m-logo.png">
+</head>
+<body>
+<!--KOPF-->
+
+<section class="hero klein">
+  <img class="bg" src="bilder/2.jpg" alt="Ausstellungshalle von RM Automobile">
+  <div class="wrap">
+    <p class="eyebrow">Autohandel</p>
+    <h1>Unser Fahrzeugbestand</h1>
+    <p>Gepflegte Gebraucht- und Jahreswagen, geprüft in der eigenen Werkstatt. Der Bestand unten ist tagesaktuell.</p>
+  </div>
+</section>
+
+<section style="padding-bottom:40px">
+  <div class="wrap">
+    <div class="kopfzeile">
+      <h2>Aktuell verfügbar</h2>
+      <p class="lead">Fahrzeug gefunden? Rufen Sie an unter <a href="tel:+4966224208362" style="color:var(--rot);font-weight:600">06622 42083-62</a> oder schreiben Sie uns. Probefahrten vereinbaren wir kurzfristig.</p>
+    </div>
+    <div id="bestand-schutz" class="bestandschutz">
+      <h3>Fahrzeugbestand von mobile.de laden</h3>
+      <p>Unser Bestand wird über mobile.de angezeigt. Beim Laden wird eine Verbindung zu mobile.de hergestellt und Ihre IP-Adresse dorthin übertragen. Deshalb starten wir das erst auf Ihren Klick.</p>
+      <button class="knopf" type="button" onclick="bestandLaden()">Fahrzeugbestand anzeigen</button>
+      <p class="klein" style="margin-top:14px">Lieber direkt fragen? <a href="tel:+4966224208362">06622 42083-62</a> oder <a href="kontakt.html">Nachricht schreiben</a>.</p>
+    </div>
+    <script>
+      function bestandLaden(){
+        var box = document.getElementById('bestand-schutz');
+        var rahmen = document.createElement('iframe');
+        rahmen.className = 'bestand';
+        rahmen.title = 'Fahrzeugbestand von RM Automobile';
+        rahmen.src = 'https://home.mobile.de/home/index.html?partnerHead=false&colorTheme=red&customerId=45537209';
+        box.replaceWith(rahmen);
+      }
+    </script>
+  </div>
+</section>
+
+<section class="sand">
+  <div class="wrap">
+    <div class="kopfzeile">
+      <p class="eyebrow">Rund um den Kauf</p>
+      <h2>Was wir zum Fahrzeug dazu anbieten</h2>
+    </div>
+    <div class="karten">
+      <div class="karte">
+        <h3>Finanzierung</h3>
+        <p>Unser langjähriger Partner ist die Santander Consumer Bank. Im persönlichen Gespräch rechnen wir Ihnen ein individuelles Angebot aus. Läuft für Ihr altes Fahrzeug noch ein Kredit, übernehmen wir die Ablöse und die Formalitäten.</p>
+      </div>
+      <div class="karte">
+        <h3>Gebrauchtfahrzeug-Garantie</h3>
+        <p>Beim Kauf oder für ein Fahrzeug, das Sie bereits fahren, können Sie bei uns gegen Aufpreis eine Gebrauchtfahrzeug-Garantie abschließen. Es gelten die Bedingungen der Garantiegesellschaft. Sprechen Sie uns an, wir gehen das mit Ihnen durch.</p>
+      </div>
+      <div class="karte">
+        <h3>Suchauftrag</h3>
+        <p>Ihr Wunschfahrzeug steht gerade nicht bei uns? Sagen Sie uns Modell, Ausstattung und Preisrahmen. Wir halten die Augen offen und melden uns, sobald etwas Passendes hereinkommt.</p>
+        <a class="mehr" href="kontakt.html">Suchauftrag anlegen →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tinte" style="padding:66px 0">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between">
+    <div>
+      <h2 style="max-width:22ch">Lieber vor Ort schauen?</h2>
+      <p class="lead" style="margin-top:12px">Die Ausstellungsfläche in der Ziegeleistraße 1 ist während der Öffnungszeiten offen. Ein Termin ist nicht nötig.</p>
+    </div>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a class="knopf weiss" href="tel:+4966224208362">06622 42083-62</a>
+      <a class="knopf rand-weiss" href="kontakt.html">Nachricht schreiben</a>
+    </div>
+  </div>
+</section>
+
+<!--FUSS-->
+</body>
+</html>
