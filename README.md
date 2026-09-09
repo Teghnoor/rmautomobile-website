@@ -42,6 +42,24 @@ Lokal ansehen:
 cd ~/rmautomobile-website && python3 -m http.server 8931
 ```
 
+## Veröffentlichen
+
+Das Projekt liegt auf GitHub: `Teghnoor/rmautomobile-website`, öffentlich, Branch `main`.
+GitHub Pages liefert den Wurzelordner aus:
+
+    https://teghnoor.github.io/rmautomobile-website/
+
+Änderungen gehen so live:
+
+```bash
+cd ~/rmautomobile-website
+python3 build/bau.py          # Unterseiten neu bauen
+git add -A && git commit -m "..." && git push
+```
+
+Für eine eigene Domain wie bei RDVC: eine Datei `CNAME` mit der Domain in den Wurzelordner
+legen, committen, und beim Anbieter einen A-Record auf die GitHub-Pages-Adressen setzen.
+
 ## Was geändert wurde
 
 - **Struktur nach Anliegen statt nach Firmenlogik.** Kaufen, Verkaufen, Werkstatt sind
